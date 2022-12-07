@@ -1,0 +1,12 @@
+package info.inside.jwt.repository;
+
+import info.inside.jwt.entities.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByName(String name);
+}
