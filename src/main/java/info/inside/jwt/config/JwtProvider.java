@@ -23,7 +23,7 @@ public class JwtProvider {
     private String jwt;
 
     public String generateAccessToken(String login) {
-        Date date = Date.from(LocalDateTime.now().plusSeconds(180)
+        Date date = Date.from(LocalDateTime.now().plusDays(15)
                 .atZone(ZoneId.systemDefault()).toInstant());
         return Jwts.builder()
                 .setSubject(login)
