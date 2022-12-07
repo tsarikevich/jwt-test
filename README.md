@@ -6,6 +6,7 @@
 Описание:
 ---
 Перед запуском приложения необходимо запустить файл data.sql для создания и заполнения таблиц БД.
+
 Для запуска программы через Intellij Idea в настройках (application.properties) указать: _spring.datasource.url=jdbc:mysql://localhost:3306/jwt_
 
 Приложение содержит два HTTP POST endpoint (контроллер UserController):
