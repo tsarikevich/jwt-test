@@ -6,7 +6,7 @@
 Описание:
 ---
 Перед запуском приложения необходимо запустить файл data.sql для создания и заполнения таблиц БД.
-Приложение содержит два HTTP POST endpoint контроллера UserController:
+Приложение содержит два HTTP POST endpoint (контроллер UserController):
 
 http://localhost:9150/users/authenticate - проверяет пароль по БД, создает и отправляет в ответ jwt токен:
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/Token.jpg)
