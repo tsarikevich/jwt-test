@@ -21,7 +21,7 @@
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/historyMessage.jpg)
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/jwtToken.jpg)
 
-#### Ссылка на репозиторий DockerHub: [jwt-project](https://hub.docker.com/repository/docker/tsarikevich/jwt-project)
+#### Ссылка на репозиторий Docker Hub: [jwt-project](https://hub.docker.com/repository/docker/tsarikevich/jwt-project)
 
 Технологии:
 ---
