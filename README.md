@@ -5,21 +5,23 @@
 
 Описание:
 ---
-Перед запуском приложения необходимо запустить файл _data.sql_ для создания и заполнения таблиц БД.
+Перед запуском приложения необходимо запустить файл [data.sql](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/data.sql) для создания и заполнения таблиц БД.
 
 Для запуска программы через Intellij Idea в настройках (application.properties) указать: _spring.datasource.url=jdbc:mysql://localhost:3306/jwt_.
 
-Приложение содержит два HTTP POST endpoint (контроллер UserController):
+#### Приложение содержит два HTTP POST endpoint (контроллер UserController):
 
-http://localhost:9150/users/authenticate - проверяет пароль по БД, создает и отправляет в ответ jwt токен:
+1. `http://localhost:9150/users/authenticate` - проверяет пароль по БД, создает и отправляет в ответ jwt токен:
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/Token.jpg)
 
-http://localhost:9150/users/message - принимает на вход "имя пользователя" и "сообщение", проверяет токен, в случае успешной проверки токена, полученное сообщение сохраняется в БД:
+2. `http://localhost:9150/users/message` - принимает на вход "имя пользователя" и "сообщение", проверяет токен, в случае успешной проверки токена, полученное сообщение сохраняется в БД:
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/newMessage.jpg)
 
 При вводе сообщения вида "history 3" происходит проверка токена, в случае успешной проверки токена отправляется 3 последних сообщения пользователя из БД:
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/historyMessage.jpg)
 ![](https://github.com/tsarikevich/jwt-test/blob/master/src/main/resources/static/jwtToken.jpg)
+
+#### Ссылка на репозиторий DockerHub: [jwt-project](https://hub.docker.com/repository/docker/tsarikevich/jwt-project)
 
 Технологии:
 ---
